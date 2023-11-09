@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://thmyelead.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ToDo</title>
 </head>
 <body>
-
+    <div th:each="toDo :${toDos}">
+        <p th:text="${toDo.text}"></p>
+    </div>
 </body>
 </html>
